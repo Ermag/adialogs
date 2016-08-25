@@ -286,8 +286,8 @@ public class Notification extends CordovaPlugin {
         Runnable runnable = new Runnable() {
             public void run() {
                 final EditText promptInput =  new EditText(cordova.getActivity());
+                promptInput.setHintTextColor(0xff444444);
                 promptInput.setHint(defaultText);
-                promptInput.setHintTextColor(0xff888888);
                 AlertDialog.Builder dlg = createDialog(cordova); // new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
                 dlg.setMessage(message);
                 dlg.setTitle(title);
@@ -477,7 +477,7 @@ public class Notification extends CordovaPlugin {
     private AlertDialog.Builder createDialog(CordovaInterface cordova) {
         int currentapiVersion = android.os.Build.VERSION.SDK_INT;
         if (currentapiVersion >= android.os.Build.VERSION_CODES.HONEYCOMB) {
-            return new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
+            return new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_DARK);
         } else {
             return new AlertDialog.Builder(cordova.getActivity());
         }
@@ -487,7 +487,7 @@ public class Notification extends CordovaPlugin {
     private ProgressDialog createProgressDialog(CordovaInterface cordova) {
         int currentapiVersion = android.os.Build.VERSION.SDK_INT;
         if (currentapiVersion >= android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-            return new ProgressDialog(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
+            return new ProgressDialog(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_DARK);
         } else {
             return new ProgressDialog(cordova.getActivity());
         }
