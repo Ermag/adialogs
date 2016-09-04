@@ -19,14 +19,14 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="cordova-plugin-dialogs"
+           id="adialogs"
       version="1.2.1">
 
     <name>Notification</name>
     <description>Cordova Notification Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,notification</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git</repo>
+    <repo>https://github.com/Ermag/adialogs.git</repo>
     <issue>https://issues.apache.org/jira/browse/CB/component/12320642</issue>
 
     <js-module src="www/notification.js" name="notification">

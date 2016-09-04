@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-dialogs",
+  "name": "adialogs",
   "version": "1.2.1",
   "description": "Cordova Notification Plugin",
   "cordova": {
-    "id": "cordova-plugin-dialogs",
+    "id": "adialogs",
     "platforms": [
       "firefoxos",
       "android",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apache/cordova-plugin-dialogs"
+    "url": "https://github.com/Ermag/adialogs"
   },
   "keywords": [
     "cordova",
